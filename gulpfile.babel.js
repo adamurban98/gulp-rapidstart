@@ -147,8 +147,16 @@ gulp.task('images', () => {
 		.pipe($.size());
 });
 
-gulp.task('fonts', () => {
+gulp.task('fonts', ['fa'], () => {
 	return gulp.src('app/fonts/*.{eot,svg,ttf,woff,woff2}')
 		.pipe(gulp.dest('.tmp/fonts'))
 		.pipe(gulp.dest('dist/fonts'));
 });
+
+
+gulp.task('fa', () => {
+	return gulp.src('bower_components/font-awesome/fonts/*.{eot,svg,ttf,woff,woff2}')
+		.pipe(gulp.dest('.tmp/fonts'))
+		.pipe(gulp.dest('dist/fonts'));
+});
+
