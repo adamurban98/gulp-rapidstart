@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*		ABSTRACTS
+		- for all settings, helpers, functions etc. No direct output. */
+
+@import 'abstracts/fonts';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+
+/*		BASE
+		- Global styles of our project. 
+			And helpers - custom classes. */
+
+@import 'base/global';
+@import 'base/typography';
+@import 'base/backgrounds';
+@import 'base/helpers-text';
+@import 'base/helpers-colors';
+@import 'base/helpers-misc';
+
+
+/*		COMPONENTS
+		- All components of our webpage. */
+
+@import 'components/back-to-top';
+@import 'components/buttons';
+
+
+/*		LAYOUTS
+		- Anything that is a part of our complete layout. */
+
+@import 'layout/header';
+@import 'layout/footer';
+
+
+/*		PLUGINS
+		Customizations of front-end dependencies & plugins. */
+// @import 'plugins/';
