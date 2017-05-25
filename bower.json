@@ -1,8 +1,8 @@
 {
-	"name": "change-me",
+	"name": "gulp-rapidstart",
 	"authors": [{
-		"name": "kevin cizik",
-		"email": "kevin.cizik@proup.com"
+		"name": "kevin",
+		"email": "kevin.cizik@proup.sk"
 	}],
 	"private": true,
 	"devDependencies": {
