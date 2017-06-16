@@ -12,28 +12,28 @@
 		- Global styles of our project. 
 			And helpers - custom classes. */
 
-@import 'base/global';
-@import 'base/typography';
 @import 'base/backgrounds';
-@import 'base/helpers-text';
+@import 'base/buttons';
+@import 'base/global';
 @import 'base/helpers-colors';
 @import 'base/helpers-misc';
+@import 'base/helpers-text';
+@import 'base/typography';
 
 
 /*		COMPONENTS
 		- All components of our webpage. */
 
-@import 'components/back-to-top';
-@import 'components/buttons';
+// @import 'components/';
 
 
 /*		LAYOUTS
 		- Anything that is a part of our complete layout. */
 
-@import 'layout/header';
 @import 'layout/footer';
+@import 'layout/header';
 
 
 /*		PLUGINS
 		Customizations of front-end dependencies & plugins. */
-// @import 'plugins/';
+@import 'plugins/back-to-top';
