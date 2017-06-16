@@ -1,66 +1,61 @@
-html {
+body {
 
-	overflow-x: hidden;
+	@include font($family: $fFamily-base, $weight: $fWeight-text-regular);
 
-	body {
+	b, strong { font-weight: $fWeight-text-bold; }
 
-		@include font($family: $fFamily-base, $weight: $fWeight-text-regular);
-
-		b, strong { font-weight: $fWeight-text-bold; }
-
-		p {
-		    @include font($family: $fFamily-base, $size: $fSize-p);
-		    line-height: $lHeight-base;
-		    margin: 0;
-		    padding: 0;
-		    color: inherit;
-		}
-
-		hr {
-			
-		}
-
-		a {
-		    @include font($family: $fFamily-base);
-		    color: inherit;
-
-		    &:focus, &:hover, &:active {
-		        outline: 0;
-		        color: inherit;
-		        // text-decoration: none;
-		    }
-		}
-
-		li { list-style: none; }
-
-		h1, h2, h3, h4, h5, h6 {
-		  margin: 0;
-		  @include font($family: $fFamily-heading, $weight: $fWeight-h-regular);
-		  line-height: $lHeight-heading;
-		}
-
-		h1 { @include font($size: $fSize-h1); };
-		h2 { @include font($size: $fSize-h2); };
-		h3 { @include font($size: $fSize-h3); };
-		h4 { @include font($size: $fSize-h4); };
-		h5 { @include font($size: $fSize-h5); };
-		
-		::selection {
-		    color: $color-white;
-		    background: $color-black;
-		    text-shadow: none;
-		}
-		::-webkit-selection {
-		    color: $color-white;
-		    background: $color-black;
-		    text-shadow: none;
-		}
-		::-moz-selection {
-		    color: $color-white;
-		    background: $color-black;
-		    text-shadow: none;
-		}
-
-		:active, :focus { outline: none; }
+	p {
+	    @include font($family: $fFamily-base, $size: $fSize-p);
+	    line-height: $lHeight-base;
+	    margin: 0;
+	    padding: 0;
+	    color: inherit;
 	}
+
+	hr {
+		
+	}
+
+	a {
+	    @include font($family: $fFamily-base);
+	    color: inherit;
+
+	    &:focus, &:hover, &:active {
+	        outline: 0;
+	        color: inherit;
+	        // text-decoration: none;
+	    }
+	}
+
+	li { list-style: none; }
+
+	h1, h2, h3, h4, h5, h6 {
+	  margin: 0;
+	  @include font($family: $fFamily-heading, $weight: $fWeight-h-regular);
+	  line-height: $lHeight-heading;
+	}
+
+	h1 { @include font($size: $fSize-h1); };
+	h2 { @include font($size: $fSize-h2); };
+	h3 { @include font($size: $fSize-h3); };
+	h4 { @include font($size: $fSize-h4); };
+	h5 { @include font($size: $fSize-h5); };
+	
+	::selection {
+	    color: $color-white;
+	    background: $color-black;
+	    text-shadow: none;
+	}
+	::-webkit-selection {
+	    color: $color-white;
+	    background: $color-black;
+	    text-shadow: none;
+	}
+	::-moz-selection {
+	    color: $color-white;
+	    background: $color-black;
+	    text-shadow: none;
+	}
+
+	:active, :focus { outline: none; }
 }
