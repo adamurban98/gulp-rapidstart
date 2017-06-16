@@ -84,6 +84,7 @@ List of placeholders
         touch-action: manipulation;
     cursor: pointer;
     @include user-select(none);
+    @include animation(.3s);
 
     &:focus,
     &:active:focus,
@@ -92,10 +93,6 @@ List of placeholders
     &:active.focus,
     &.active.focus {
         outline: none;
-    }
-
-    &:hover {
-        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
     }
 
     &:hover,
