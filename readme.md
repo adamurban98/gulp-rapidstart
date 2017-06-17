@@ -1,4 +1,4 @@
-# gulp-rapidstart
+# gulp-rapidstart 🚀
 
 my personal mini-project to start front-end development asap.
 
@@ -6,7 +6,7 @@ my personal mini-project to start front-end development asap.
 
 ## Getting Started
 
-To get things running smoothly, I assume you have installed these packages installed globally.
+To get things running smoothly, I assume you have already installed globally these packages.
 * [NPM@6](https://www.npmjs.com) ( you can use [Yarn](https://yarnpkg.com) )
 * [Gulp.js](http://gulpjs.com)
 * [Bower](https://bower.io)
@@ -29,7 +29,11 @@ If everything runs smoothly, you should be able to run ```gulp serve```.
 
 *Building production version* - just run ```gulp``` or ```gulp build```
 
-*Wiredep* - if you don't ```gulp serve``` ATM, after editing bower.json run ```gulp wiredep```
+*Wiredep* - ```gulp wiredep``` will inject js/css files from dependencies, however, if you ATM run ```gulp serve``` (while editing bower.json), this task is self-running.
+
+*Helpers* - be sure to check out /app/styles/base/_helpers-*
+
+*Setting colors* - to set out reusable colors, use /app/styles/abstracts/_variables.scss && /app/styles/base/_colors.scss
 
 
 
@@ -37,13 +41,13 @@ If everything runs smoothly, you should be able to run ```gulp serve```.
 
 They are all optional. You can add/remove them as you wish in /bower.json
 * [Bootstrap](http://getbootstrap.com) - Front-End Framework ( v3.3.7 )
+* [Cookieconsent](https://cookieconsent.insites.com) - The most popular solution to the EU cookie law
 * [Font Awesome](http://fontawesome.io) - The iconic font and CSS toolkit
 * [jQuery Validation](https://jqueryvalidation.org) - Form validation with jQuery
-* [normalize-css](https://necolas.github.io/normalize.css/) - A modern, HTML5-ready alternative to CSS resets
-* [Tooltipster](http://iamceege.github.io/tooltipster/) - jQuery plugin for modern tooltips
-* [Cookieconsent](https://cookieconsent.insites.com) - The most popular solution to the EU cookie law
-* [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) - Beautiful responsive carousel sliders
 * [matchHeight](https://github.com/liabru/jquery-match-height) - a responsive equal heights plugin for jQuery
+* [normalize-css](https://necolas.github.io/normalize.css/) - A modern, HTML5-ready alternative to CSS resets
+* [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) - Beautiful responsive carousel sliders
+* [Tooltipster](http://iamceege.github.io/tooltipster/) - jQuery plugin for modern tooltips
 * [WOW](https://github.com/matthieua/WOW) - Reveal CSS animation as you scroll down a page
 * and others.
 
@@ -51,6 +55,6 @@ They are all optional. You can add/remove them as you wish in /bower.json
 
 ## Authors
 
-* **Me** - [keevvinc](https://github.com/keevvinc)
+* **[Keevvinc]((https://github.com/keevvinc))** - [me](https://github.com/keevvinc)
 
 
