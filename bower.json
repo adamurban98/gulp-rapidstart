@@ -28,6 +28,12 @@
 				"css/font-awesome.min.css"
 			]
 		},
+		"bootstrap": {
+			"main": [
+				"dist/css/bootstrap.min.css",
+				"dist/js/bootstrap.min.js"
+			]
+		},
 		"wow": {
 			"main": [
 				"dist/wow.min.js",
