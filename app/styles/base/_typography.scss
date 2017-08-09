@@ -1,19 +1,24 @@
 body {
   @include font($family: $fFamily-base, $weight: $fWeight-text-regular);
 
+  b, strong { font-weight: $fWeight-text-bold; }
+
   p {
     @include font($family: $fFamily-base, $size: $fSize-p);
     line-height: $lHeight-base;
-    margin: 0;
-    padding: 0;
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  @include font($family: $fFamily-heading, $weight: $fWeight-h-regular);
-  line-height: $lHeight-heading;
+    @include font($family: $fFamily-heading, $weight: $fWeight-h-regular);
+    line-height: $lHeight-heading;
 }
+
+h1 { @include font($size: $fSize-h1); };
+h2 { @include font($size: $fSize-h2); };
+h3 { @include font($size: $fSize-h3); };
+h4 { @include font($size: $fSize-h4); };
+h5 { @include font($size: $fSize-h5); };
 
 em { font-style: italic; }
 strong { font-weight: bold; }
