@@ -1,20 +1,21 @@
-.fFamily-heading { @include font($family: $fFamily-heading); }
-.fFamily-base { @include font($family: $fFamily-base); }
+.ff-heading { @include font($family: $ff-montserrat); }
+.ff-base { @include font($family: $ff-opensans); }
 
-.fWeight-h-regular 		{ @include font($weight: $fWeight-h-regular) };
-.fWeight-h-bold 		{ @include font($weight: $fWeight-h-bold) };
-.fWeight-text-regular 	{ @include font($weight: $fWeight-text-regular) };
-.fWeight-text-bold 		{ @include font($weight: $fWeight-text-bold) };
+.fw-300	{ font-weight: 300; }
+.fw-400	{ font-weight: 400; }
+.fw-500	{ font-weight: 500; }
+.fw-600	{ font-weight: 600; }
+.fw-700	{ font-weight: 700; }
 
-.fSize-12 { @include font($size: 12px); }
-.fSize-14 { @include font($size: 14px); }
-.fSize-16 { @include font($size: 16px); }
-.fSize-18 { @include font($size: 18px); }
-.fSize-21 { @include font($size: 21px); }
-.fSize-24 { @include font($size: 24px); }
-.fSize-30 { @include font($size: 30px); }
-.fSize-36 { @include font($size: 36px); }
-.fSize-42 { @include font($size: 42px); }
+.fs-12 { @include font($size: 12px); }
+.fs-14 { @include font($size: 14px); }
+.fs-16 { @include font($size: 16px); }
+.fs-18 { @include font($size: 18px); }
+.fs-21 { @include font($size: 21px); }
+.fs-24 { @include font($size: 24px); }
+.fs-30 { @include font($size: 30px); }
+.fs-36 { @include font($size: 36px); }
+.fs-42 { @include font($size: 42px); }
 
 .text-center { text-align: center; }
 .uppercase { text-transform: uppercase; }

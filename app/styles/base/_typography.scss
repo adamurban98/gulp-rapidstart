@@ -1,24 +1,24 @@
 body {
-  @include font($family: $fFamily-base, $weight: $fWeight-text-regular);
+  @include font($family: $ff-opensans, $weight: $fw-400);
 
-  b, strong { font-weight: $fWeight-text-bold; }
+  b, strong { font-weight: $fw-700; }
 
   p {
-    @include font($family: $fFamily-base, $size: $fSize-p);
-    line-height: $lHeight-base;
+    @include font($family: $ff-opensans, $size: $fs-p);
+    line-height: $lh-base;
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @include font($family: $fFamily-heading, $weight: $fWeight-h-regular);
-    line-height: $lHeight-heading;
+    @include font($family: $ff-montserrat, $weight: $fw-500);
+    line-height: $lh-heading;
 }
 
-h1 { @include font($size: $fSize-h1); };
-h2 { @include font($size: $fSize-h2); };
-h3 { @include font($size: $fSize-h3); };
-h4 { @include font($size: $fSize-h4); };
-h5 { @include font($size: $fSize-h5); };
+h1 { @include font($size: $fs-h1); };
+h2 { @include font($size: $fs-h2); };
+h3 { @include font($size: $fs-h3); };
+h4 { @include font($size: $fs-h4); };
+h5 { @include font($size: $fs-h5); };
 
 em { font-style: italic; }
 strong { font-weight: bold; }

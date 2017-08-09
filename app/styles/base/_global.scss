@@ -11,7 +11,7 @@ body {
 	}
 
 	a {
-	    @include font($family: $fFamily-base);
+	    @include font($family: $ff-opensans);
 	    color: inherit;
 
 	    &:focus, &:hover, &:active {
