@@ -64,6 +64,7 @@ gulp.task('build', ['html', 'styles', 'scripts', 'images', 'fonts'], () => {
 
 gulp.task('serve', ['styles'], () => {
 	browserSync({
+		browser: 'google chrome',
 		notify: true,
 		port: 9000,
 		server: {
