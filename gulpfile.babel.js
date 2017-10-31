@@ -6,6 +6,8 @@ const reload = browserSync.reload;
 const wiredep = require('wiredep').stream;
 const $ = require('gulp-load-plugins')();
 
+const notify = require("gulp-notify");
+
 function lint(files, options) {
 	return () => {
 		return gulp.src(files)
