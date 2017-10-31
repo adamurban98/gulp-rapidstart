@@ -1,22 +1,3 @@
-/*
-
-List of mixins
-    @include clearfix;
-    @include background('images/logo.png');
-    @include position(absolute, $top: 5px, $left: 5px);
-    @include size(100%, 1px);
-    @include button();
-    @include button-color($color-base, $color-white, transparent, $color-base, 1px, $color-base, $color-base);
-    @include button-size($font-size-14, $font-weight-400, 6px 12px);
-    @include placeholder($color-base);
-    @include bg-opacity($color-dark, .2);
-    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
-
-List of placeholders
-    @extend %bg-image;
-
-*/
-
 @mixin clearfix() {
     &:before, &:after {
         content: " ";
@@ -55,7 +36,6 @@ List of placeholders
     font-family: $family;
 }
 
-
 @mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
     position: $position;
     top: $top;
@@ -64,12 +44,10 @@ List of placeholders
     bottom: $bottom;
 }
 
-
 @mixin size($width, $height: $width) {
     width: $width;
     height: $height;
 }
-
 
 @mixin button() {
     padding: 12px 35px;
@@ -117,7 +95,6 @@ List of placeholders
     }
 }
 
-
 @mixin button-color($btn-color, $btn-color-hover, $btn-bg-color, $btn-bg-hover-color, $btn-border-width, $btn-border-color, $btn-border-hover-color) {
     color: $btn-color;
     background: $btn-bg-color;
@@ -133,14 +110,12 @@ List of placeholders
     }
 }
 
-
 @mixin button-size($btn-font-size, $btn-fweight, $btn-padding) {
     font-size: $btn-font-size;
     font-weight: $btn-fweight;
     padding: $btn-padding;
 }
 
-/* eg: @include user-select(none); */
 @mixin user-select($user-select) {
     -webkit-user-select: ($user-select);
     -moz-user-select: ($user-select);
@@ -148,18 +123,15 @@ List of placeholders
     user-select: ($user-select);
 }
 
-
 @mixin placeholder($color: $input-color-placeholder) {
     &::-moz-placeholder           { color: $color; } // Firefox 19+
     &:-ms-input-placeholder       { color: $color; } // Internet Egplorer 10+
     &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
 }
 
-
 @mixin bg-opacity($color, $opacity: 0.3) {
     background: rgba($color, $opacity);
 }
-
 
 @mixin cubic-transition($delay, $duration, $property) {
     transition: {
@@ -169,22 +141,18 @@ List of placeholders
     }
 }
 
-/* eg: @include rotate(45deg); */
 @mixin rotate($degrees) {
     transform: rotate($degrees);
 }
 
-/* eg: @include translate3d(0,0,0); */
 @mixin translate3d($x, $y, $z) {
     transform: translate3d($x, $y, $z);
 }
 
-/* eg: @include border-radius(3px); */
 @mixin border-radius($radius) {
     border-radius: $radius;
 }
 
-/* eg: @include visibility-backface(hidden); */
 @mixin visibility-backface($visibility) {
     backface-visibility: $visibility;
 }

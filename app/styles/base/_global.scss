@@ -6,10 +6,6 @@ body {
 	    color: inherit;
 	}
 
-	hr {
-		
-	}
-
 	a {
 	    @include font($family: $ff-opensans);
 	    color: inherit;
@@ -17,7 +13,6 @@ body {
 	    &:focus, &:hover, &:active {
 	        outline: 0;
 	        color: inherit;
-	        // text-decoration: none;
 	    }
 	}
 
